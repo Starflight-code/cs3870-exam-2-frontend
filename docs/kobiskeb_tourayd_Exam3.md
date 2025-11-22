@@ -4,52 +4,137 @@
 | Professor: Dr. Abraham Aldaco
 | Date: 2025-11-22
 
-## AI/ML Usage
+## Vite Configuration
 
-### Prompt 1: Implementing Error Handling for Camera Permissions
+Vite build configuration showing the development server setup and build options.
 
-Prompt Used:
-"How do I handle camera permission denials in React Native without crashing the app?"
+![](./vite.png){width=50%}
 
-Explanation:
-The AI helped identify that we needed to check the permission state before attempting to use the camera. It suggested:
-1. A loading state while permissions are being checked
-2. A user-friendly UI when permissions are denied
-3. A button to request permissions again if initially denied
-4. Proper use of React Native components (ActivityIndicator, TouchableOpacity) for better UX
+## Package.json Configuration
 
-This prevented crashes and improved the user experience by providing clear feedback about permission status.
+Package dependencies and scripts configuration for the project.
 
-![Prompt 1](./aiprompt1.png){width=50%}
+![](./packagejson.png){width=50%}
 
-### Prompt 2: Optimizing Frame Processing Performance in Object Tracking
+## GitHub Frontend Repository
 
-Prompt Used:
-"How do I make my frame processor faster? It's lagging when processing camera frames for object tracking."
+GitHub repository view showing the frontend project structure and files.
 
-Explanation:
-The AI suggested implementing subsampling to reduce computational load:
-1. Worklet Optimization: Ensured all functions are marked with `'worklet'` directive to run on the UI thread for better performance
-2. Maintained Accuracy: The subsampling approach still detects objects accurately because we're looking for color patterns that span multiple pixels
-3. Edge Case Handling: Added bounds checking to prevent array index errors when sampling near image boundaries
+![](./github_frontend.png){width=50%}
 
-![Prompt 2](./aiprompt2.png){width=50%}
+## Backend Deployment
 
-## Main Page
+Backend deployment configuration showing the deployment settings and environment.
 
-The main screen shows our group details and links controlled via Expo Routing. These links can be navigated to via a click. The information is displayed in a flex layout, providing functionality across multiple device screen sizes.
+![](./deploy_be.png){width=50%}
 
-![](./main.png){width=50%}
+## Backend Build Deployment
 
-## Screen 1 - Photo Capture & Storage
+Backend build process showing the deployment build configuration.
 
-The photo capture sceen shows a photo preview, showing what your camera sees. Once you press the take photo button (it's a white circle near the bottom of the sceen), you can see the photo taken and decide whether to keep or retake the photo. You can also browse your photo gallery on a seperate screen, showcased in our video.
+![](./deploy_build_be.png){width=50%}
 
-![](./photocapture.png){width=50%}/
-![](./photodisplay.png){width=50%}
+## Backend Environment Variables
 
-## Screen 2 - Object / Color Tracking
+Backend environment variables configuration showing sensitive data setup.
 
-This screen allows you to detect an object. This is currently tuned to detect a bright green silicon ice cube tray, showcased in the video. When the tray is detected, the top of page text reflects the detection.
+![](./envs_be.png){width=50%}
 
-![](./tracking.png){width=50%}
+## Backend Dotenv Configuration
+
+Backend dotenv file showing local environment variable configuration.
+
+![](./dotenv_be.png){width=50%}
+
+## Backend Gitignore
+
+Backend gitignore file showing files and directories excluded from version control.
+
+![](./gitignoreb.png){width=50%}
+
+## MongoDB IP Configuration
+
+MongoDB IP whitelist configuration showing allowed IP addresses for database access.
+
+![](./mongo_ips.png){width=50%}
+
+## Pages Home
+
+Home page view showing the main application interface.
+
+![](./pages_home.png){width=50%}
+
+## Pages MongoDB Connection
+
+MongoDB connection configuration page showing database connection settings.
+
+![](./pages_mongo.png){width=50%}
+
+## Pages Deployment
+
+Pages deployment configuration showing the deployment settings and status.
+
+![](./pages_deploy.png){width=50%}
+
+## Pages Final View
+
+Final pages view showing the completed application interface.
+
+![](./pages_final.png){width=50%}
+
+## Pages POST Request
+
+POST request demonstration showing data submission to the backend API.
+
+![](./pages_POST.png){width=50%}
+
+## Pages PUT Request
+
+PUT request demonstration showing data update operation to the backend API.
+
+![](./pages_PUT.png){width=50%}
+
+## Pages DELETE Request
+
+DELETE request demonstration showing data deletion operation from the backend API.
+
+![](./pages_DELETE.png){width=50%}
+
+## Local GET Request
+
+Local GET request demonstration showing data retrieval from the local backend.
+
+![](./local_GET.png){width=50%}
+
+## Local POST Request
+
+Local POST request demonstration showing data creation on the local backend.
+
+![](./local_POST.png){width=50%}
+
+## Local PUT Request
+
+Local PUT request demonstration showing data update on the local backend.
+
+![](./local_PUT.png){width=50%}
+
+## Local DELETE Request
+
+Local DELETE request demonstration showing data deletion from the local backend.
+
+![](./local_DELETE.png){width=50%}
+
+## Local Final View
+
+Local final view showing the completed local application interface.
+
+![](./local_final.png){width=50%}
+
+## Render GET Request
+
+Render GET request demonstration showing data retrieval from the deployed backend on Render.
+
+![](./render_GET.png){width=50%}
+
+
+No AI tools were used in this project.
