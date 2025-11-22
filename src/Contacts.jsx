@@ -7,7 +7,7 @@ const Contacts = () => {
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        const response = await fetch("http://localhost:8081/contacts");
+        const response = await fetch("http://cs3870-exam-2-backend.onrender.com:8081/contacts");
         if (!response.ok) {
           throw new Error("Failed to fetch contacts");
         }

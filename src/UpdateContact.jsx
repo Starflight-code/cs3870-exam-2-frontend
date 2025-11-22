@@ -14,7 +14,7 @@ export default function AddContact() {
       return;
     }
     try {
-      const res = await fetch("http://localhost:8081/contacts", {
+      const res = await fetch("http://cs3870-exam-2-backend.onrender.com:8081/contacts", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
