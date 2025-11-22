@@ -10,7 +10,7 @@ export default function ViewContact() {
 
   useEffect(() => {
     (async () => {
-      const res = await fetch(`http://cs3870-exam-2-backend.onrender.com:8081/contact/${name}`);
+      const res = await fetch(`https://cs3870-exam-2-backend.onrender.com:443/contact/${name}`);
       const data = await res.json().catch(() => null);
 
       setContactName(data["contact_name"]);

@@ -13,7 +13,7 @@ function DeleteContact() {
     try {
       const encodedName = encodeURIComponent(trimmedName);
       console.log("EncodeURIComponent :", encodedName);
-      const res = await fetch(`http://cs3870-exam-2-backend.onrender.com:8081/contact/${encodedName}`, {
+      const res = await fetch(`https://cs3870-exam-2-backend.onrender.com:443/contact/${encodedName}`, {
         method: "DELETE",
       });
       const data = await res.json().catch(() => null);
